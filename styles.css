@@ -1,0 +1,124 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Container for Alignment */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    padding: 20px; /* Prevent content from overflowing on small screens */
+    box-sizing: border-box;
+}
+
+/* Form Box Styling */
+.form-box {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    backdrop-filter: blur(15px); /* Frosted glass effect */
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 100%; /* Take full available space */
+    max-width: 400px; /* Limit width for better design */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    color: #000;
+    box-sizing: border-box;
+}
+
+/* Logo Section */
+.logo img {
+    width: 80px; /* Adjust logo size */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Input Group */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%; /* Full width of container */
+    padding: 12px 40px 12px 15px; /* Add padding for icon space */
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    box-sizing: border-box;
+}
+
+.input-group .icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #555;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+/* Button */
+.btn {
+    background: #6a11cb;
+    color: #fff;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #2575fc;
+}
+
+/* Extra Links */
+.extra {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.extra a {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.extra a:hover {
+    color: #ddd;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <!-- <div class="logo">
+                <img src="https://via.placeholder.com/100" alt="Company Logo">
+            </div>
+            <h1>Company Name</h1>
+            <p>Slogan Here</p> -->
+
+            <form action="process.php" method="POST">
+                <div class="input-group">
+                    <input type="text" id="username" name="username" placeholder="User Name" required>
+                    <span class="icon">👤</span>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <span class="icon">📧</span>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <span class="icon">🔒</span>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Allow Terms & Conditions</label>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <p class="extra">Already have an account? <a href="#">Sign In</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
