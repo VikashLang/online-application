@@ -1,9 +1,9 @@
 $(document).ready(function () {
     $('#applicationForm').on('submit', function (event) {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault(); 
 
         $.ajax({
-            url: 'process.php',
+            url: 'process.php', 
             type: 'POST',
             data: $(this).serialize(),
             success: function (response) {
