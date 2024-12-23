@@ -5,17 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Register Form</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="form-box">
-            <!-- <div class="logo">
-                <img src="https://via.placeholder.com/100" alt="Company Logo">
-            </div>
-            <h1>Company Name</h1>
-            <p>Slogan Here</p> -->
-
-            <form action="process.php" method="POST">
+            <form id="applicationForm" method="POST">
                 <div class="input-group">
                     <input type="text" id="username" name="username" placeholder="User Name" required>
                     <span class="icon">👤</span>
@@ -35,6 +31,7 @@
                 <button type="submit" class="btn">Sign Up</button>
                 <p class="extra">Already have an account? <a href="#">Sign In</a></p>
             </form>
+            <div id="result"></div> 
         </div>
     </div>
 </body>
