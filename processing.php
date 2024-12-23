@@ -1,18 +1,24 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $phone = htmlspecialchars($_POST['phone']);
-    $message = htmlspecialchars($_POST['message']);
+   
+    $username = htmlspecialchars($_POST['username'] ?? '');
+    $email = htmlspecialchars($_POST['email'] ?? '');
+    $password = htmlspecialchars($_POST['password'] ?? '');
+    $terms = isset($_POST['terms']) ? 'Accepted' : 'Not Accepted';
 
-    echo "<div style='text-align: left;'>
-        <h2>Application Received</h2>
-        <p><strong>Name:</strong> $name</p>
+   
+    if (empty($username) || empty($email) || empty($password)) {
+        echo "<p style='color: red;'>All fields are required.</p>";
+        exit;
+    }
+
+    echo "<div style='text-align: center;'>
+        <h2>Thank You for Registering!</h2>
+        <p><strong>Name:</strong> $username</p>
         <p><strong>Email:</strong> $email</p>
-        <p><strong>Phone:</strong> $phone</p>
-        <p><strong>Message:</strong> $message</p>
+        <p><strong>Terms:</strong> $terms</p>
     </div>";
 } else {
-    echo "Invalid request.";
+    echo "<p style='color: red;'>Invalid request method.</p>";
 }
 ?>
